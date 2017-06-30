@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		E1DDC3EE1F04190600DD0E09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DDC3ED1F04190600DD0E09 /* main.m */; };
 		E1DDC3F11F04190600DD0E09 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DDC3F01F04190600DD0E09 /* AppDelegate.m */; };
-		E1DDC3F41F04190600DD0E09 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DDC3F31F04190600DD0E09 /* ViewController.m */; };
 		E1DDC3F71F04190600DD0E09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1DDC3F51F04190600DD0E09 /* Main.storyboard */; };
 		E1DDC3F91F04190600DD0E09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1DDC3F81F04190600DD0E09 /* Assets.xcassets */; };
 		E1DDC3FC1F04190600DD0E09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1DDC3FA1F04190600DD0E09 /* LaunchScreen.storyboard */; };
+		E1DDC4051F0419A000DD0E09 /* ItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DDC4041F0419A000DD0E09 /* ItemsViewController.m */; };
+		E1DDC4081F041A0A00DD0E09 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DDC4071F041A0A00DD0E09 /* Item.m */; };
+		E1DDC40B1F041A8400DD0E09 /* ItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DDC40A1F041A8400DD0E09 /* ItemStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +22,16 @@
 		E1DDC3ED1F04190600DD0E09 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E1DDC3EF1F04190600DD0E09 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E1DDC3F01F04190600DD0E09 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E1DDC3F21F04190600DD0E09 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E1DDC3F31F04190600DD0E09 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E1DDC3F61F04190600DD0E09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E1DDC3F81F04190600DD0E09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1DDC3FB1F04190600DD0E09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1DDC3FD1F04190600DD0E09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1DDC4031F0419A000DD0E09 /* ItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItemsViewController.h; path = ../ItemsViewController.h; sourceTree = "<group>"; };
+		E1DDC4041F0419A000DD0E09 /* ItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemsViewController.m; path = ../ItemsViewController.m; sourceTree = "<group>"; };
+		E1DDC4061F041A0A00DD0E09 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		E1DDC4071F041A0A00DD0E09 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		E1DDC4091F041A8400DD0E09 /* ItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemStore.h; sourceTree = "<group>"; };
+		E1DDC40A1F041A8400DD0E09 /* ItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +64,15 @@
 		E1DDC3EB1F04190600DD0E09 /* homePro */ = {
 			isa = PBXGroup;
 			children = (
+				E1DDC4031F0419A000DD0E09 /* ItemsViewController.h */,
+				E1DDC4041F0419A000DD0E09 /* ItemsViewController.m */,
 				E1DDC3EF1F04190600DD0E09 /* AppDelegate.h */,
 				E1DDC3F01F04190600DD0E09 /* AppDelegate.m */,
-				E1DDC3F21F04190600DD0E09 /* ViewController.h */,
-				E1DDC3F31F04190600DD0E09 /* ViewController.m */,
 				E1DDC3F51F04190600DD0E09 /* Main.storyboard */,
+				E1DDC4061F041A0A00DD0E09 /* Item.h */,
+				E1DDC4071F041A0A00DD0E09 /* Item.m */,
+				E1DDC4091F041A8400DD0E09 /* ItemStore.h */,
+				E1DDC40A1F041A8400DD0E09 /* ItemStore.m */,
 				E1DDC3F81F04190600DD0E09 /* Assets.xcassets */,
 				E1DDC3FA1F04190600DD0E09 /* LaunchScreen.storyboard */,
 				E1DDC3FD1F04190600DD0E09 /* Info.plist */,
@@ -110,7 +120,7 @@
 				TargetAttributes = {
 					E1DDC3E81F04190600DD0E09 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = B42MPK26LY;
+						DevelopmentTeam = LYL9XKY982;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -151,9 +161,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1DDC3F41F04190600DD0E09 /* ViewController.m in Sources */,
+				E1DDC4081F041A0A00DD0E09 /* Item.m in Sources */,
+				E1DDC4051F0419A000DD0E09 /* ItemsViewController.m in Sources */,
 				E1DDC3F11F04190600DD0E09 /* AppDelegate.m in Sources */,
 				E1DDC3EE1F04190600DD0E09 /* main.m in Sources */,
+				E1DDC40B1F041A8400DD0E09 /* ItemStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,11 +287,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = B42MPK26LY;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = LYL9XKY982;
 				INFOPLIST_FILE = homePro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tutorial.homePro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -287,11 +301,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = B42MPK26LY;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = LYL9XKY982;
 				INFOPLIST_FILE = homePro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tutorial.homePro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -314,6 +330,7 @@
 				E1DDC4021F04190600DD0E09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

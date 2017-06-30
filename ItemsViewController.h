@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ItemsViewController.h
 //  homePro
 //
 //  Created by Cui, Longxiang on 6/28/17.
@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+@class ItemStore;
 
-@interface ViewController : UIViewController
-
-
+@interface ItemsViewController : UITableViewController
+@property (nonatomic) ItemStore *itemStore;
 @end
-
