@@ -9,11 +9,25 @@
 #import "ItemsViewController.h"
 #import "ItemStore.h"
 #import "Item.h"
+#import "DetailViewController.h"
 
 
 // MARK: - Actions
 
 @implementation ItemsViewController
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // If the triggered segue is the "ShowItem" segue
+    if ([segue.identifier isEqualToString:@"ShowItem"]) {
+        // Figure out which row was just tapped
+        NSInteger row = [self.tableView indexPathForSelectedRow].row;
+        // Get the item at that row and pass it along
+        // to the segue's destination view controller
+        Item *item = self.itemStore.allItems[row];
+        DetailViewController *dvc = (DetailViewController *)segue.destinationViewController;
+        dvc.item = item;
+    }
+}
 
 - (IBAction)addNewItem:(id)sender {
     
