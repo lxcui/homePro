@@ -10,6 +10,7 @@
 
 @interface Item : NSObject
 
+@property (copy, nonatomic) NSString *itemKey;
 @property (copy, nonatomic) NSString *name;
 @property (copy, nonatomic) NSString *serialNumber;
 @property (nonatomic) int valueInDollars;

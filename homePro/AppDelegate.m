@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "ItemStore.h"
 #import "ItemsViewController.h"
+#import "ImageStore.h"
 
 @interface AppDelegate ()
 
@@ -21,10 +22,15 @@
     // Override point for customization after application launch.
     // Create an ItemStore
     ItemStore *itemStore = [ItemStore new];
+    
+    // Create an ImageStore
+    ImageStore *imageStore = [ImageStore new];
+    
     // Access the ItemsViewController
     UINavigationController *navController = (UINavigationController *)self.window.rootViewController;
     ItemsViewController *ivc = (ItemsViewController *)navController.topViewController;
     ivc.itemStore = itemStore;
+    ivc.imageStore = imageStore;
     
     return YES;
 }
