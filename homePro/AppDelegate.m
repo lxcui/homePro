@@ -22,7 +22,8 @@
     // Create an ItemStore
     ItemStore *itemStore = [ItemStore new];
     // Access the ItemsViewController
-    ItemsViewController *ivc = (ItemsViewController *)self.window.rootViewController;
+    UINavigationController *navController = (UINavigationController *)self.window.rootViewController;
+    ItemsViewController *ivc = (ItemsViewController *)navController.topViewController;
     ivc.itemStore = itemStore;
     
     return YES;
